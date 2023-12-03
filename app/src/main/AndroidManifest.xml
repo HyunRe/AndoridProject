@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndoridProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ChatListActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SalesPostActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".MyPostListActivity" />
+        <activity android:name=".LikeListActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MySalesPostActivity" />
+        <activity android:name=".UpdateActivity" />
+    </application>
+
+</manifest>
